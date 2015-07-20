@@ -1,7 +1,4 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
+## Creates a Cache Matrix Modeled after the sample program defines member functions
 
 makeCacheMatrix <- function(x = matrix()) {
 
@@ -16,9 +13,15 @@ inVerse <- NULL
   list(set=set, get=get, setinverse=setinverse, getinverse=getinverse)
 }
 
+##
+## Test Input
+## x = rbind(c(1, -1/2), c(-3/4, 1))
+##m = makeCacheMatrix(x)
+##m$get()
+##m$getinverse()
+###cacheSolve(m)
 
-
-## Write a short comment describing this function
+## Cache Solving
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
